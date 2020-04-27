@@ -25,7 +25,7 @@ variable "with_policy" {
 variable "tag_bucket_name" {
   description = "The Name tag to set for the S3 Bucket."
   type        = string
-  default     = "Test Bucket"
+  default     = "thisis20343nmsidsdf023"
 }
 
 variable "tag_bucket_environment" {

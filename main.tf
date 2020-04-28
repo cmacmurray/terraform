@@ -56,6 +56,20 @@ resource "aws_s3_bucket" "test_bucket" {
   }
 }
 
+resource "aws_s3_bucket" "nextbucket" {
+  bucket = "nextbucet302923023920"
+  acl    = "private"
+
+  versioning {
+    enabled = true
+  }
+
+  tags = {
+    Name        = var.tag_bucket_name
+    Environment = var.tag_bucket_environment
+  }
+}
+
 resource "aws_s3_bucket_policy" "bucket_access_policy" {
   count  = var.with_policy ? 1 : 0
   bucket = aws_s3_bucket.test_bucket.id

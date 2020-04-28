@@ -56,7 +56,7 @@ resource "aws_s3_bucket" "test_bucket" {
   }
 }
 
-resource "aws_s3_bucket" "nextbucket" {
+resource "aws_s3_bucket" "neoadf-0340-534903-50-xtbucket" {
   bucket = "nextbucet302923023920"
   acl    = "private"
 

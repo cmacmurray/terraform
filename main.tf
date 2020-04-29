@@ -11,7 +11,7 @@ terraform {
   required_version = ">= 0.12"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket201901910"
+resource "aws_s3_bucket" "x" {
+  bucket = "my-tf-test-bucket2019019109039393"
   acl    = "private"
 }
